@@ -1,5 +1,7 @@
-.App {
+.App {  
+	/*  box-sizing: border-box;
+*/
   text-align: center;
   margin: auto;
-  box-sizing: border-box;
+	width: 1000px;
 }

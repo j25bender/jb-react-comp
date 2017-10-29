@@ -1,10 +1,16 @@
+.story-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid ghostwhite;
-  padding: 20px;
-  margin: auto;
+  border: 1px solid ghostwhite;
+  margin: 20px 20px 20px 0;
+  height: 280px;
+  width: 478px;
 }
 
 a {
