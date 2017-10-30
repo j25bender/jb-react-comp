@@ -40,23 +40,47 @@ const stories = [
   }
 ]
 
-const App = () => {
+const App = () => { 
   return (
     <div className='App'>
+
+      <div className='banner'>
+        <Banner/>
+        <Stories  storiesTitle="Today's Top TURKEYS"
+                  stories={stories} />
+      </div>
+
       <div className='story-box'>
         {
           stories.map( (story) => {
-            return < Header headerText = { story.estTime } />
+            return < Header headerText = { story.img } />
           })
         }
-        {/*<Banner />*/}
-        
-        {/* add another Stories component with storiesTitle 'Pop Culture', and just pass down the same stories array as the above Stories component (already created but will need some editing) */}
-        {/* add a Footer Component (you will need to create this component in the provided Footer.js file) */}
-        </div>
+      </div>
+
+      <div className='pop-culture-banner'>
+        {<Stories  storiesTitle="Pop Culture"
+                stories={stories} />}
+      </div>
+
+      <div className='story-box2'>
+        {
+          stories.map( (story) => {
+            return < Header headerText = { story.img } />
+          })
+        }
+      </div>
+
+      <div className='footer'>
+        {
+          stories.map( (story) => {
+            return < Footer footerText = { story.title } />
+          })
+        }
+      </div>
+
     </div>
   );
 }
 
 export default App;
-

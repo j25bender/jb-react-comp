@@ -1,8 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
-  // WHAT GOES HERE?
+const Footer = (props) => {
+  return (
+    <div className='Footer'>
+			{ props.footerText }
+		</div>
+  )
 }
 
 export default Footer;

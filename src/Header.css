@@ -1,4 +1,4 @@
-.story-box {
+.story-box, .story-box2 {
   display: flex;
   flex-flow: row wrap;
 }
@@ -7,8 +7,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid ghostwhite;
-  margin: 20px 20px 20px 0;
+  border: 1px solid black;
+  margin: 0px 20px 20px 0;
   height: 280px;
   width: 478px;
 }
