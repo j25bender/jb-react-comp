@@ -53,7 +53,7 @@ const App = () => {
       <div className='story-box'>
         {
           stories.map( (story) => {
-            return < Header headerText = { story.img } />
+            return < Stories storiesTitle = { story.img } />
           })
         }
       </div>

@@ -5,7 +5,7 @@ import './Stories.css';
 const Stories = (props) => {
   return (
     <div className='Stories'>
-      <div className='  stories-header'>
+      <div className='stories-header'>
         <h3>{props.storiesTitle}</h3>
         <a href='#'>See more</a>
       </div>
