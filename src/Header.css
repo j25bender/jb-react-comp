@@ -1,19 +1,15 @@
-.story-box, .story-box2 {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  margin: 0px 20px 20px 0;
-  height: 280px;
-  width: 478px;
+  text-align: bottom;
+  border-bottom: 2px solid ghostwhite;
+  padding: 20px;
+  margin: auto;
 }
 
 a {
+  font-size: 20px;  
   text-align: center;
   text-decoration: none;
   color: lightseagreen;
@@ -26,7 +22,7 @@ a:hover {
 
 h1 {
   font-family: serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bolder;
   margin: 0;
 }

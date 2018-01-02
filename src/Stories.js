@@ -12,9 +12,17 @@ const Stories = (props) => {
       <div className='stories-grid'>
         {
           props.stories.map( (story, index) => {
-            return <div>{story.title}</div>
+            console.log(story);
+            return (
+              <Story 
+                img={story.img}      
+                title={story.title} 
+                desc={story.desc} 
+                authImg={story.authImg} 
+                authName={story.authName} 
+                estTime={story.estTime} />)
           })
-        }
+        }           
       </div>
     </div>
   )

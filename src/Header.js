@@ -1,11 +1,13 @@
 import React from 'react';
 import './Header.css';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <div className='Header'>
-			{ props.headerText }
-		</div>
+      <a href='#'>Write A Story</a>
+      <h1>Material</h1>
+      <a href='#'>Sign In / Sign Up</a>
+    </div>
   )
 }
 

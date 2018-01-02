@@ -38,47 +38,18 @@ const stories = [
     authName: 'Pamela',
     estTime: '11 min'
   }
-]
+];
 
-const App = () => { 
+const App = () => {
   return (
     <div className='App'>
-
-      <div className='banner'>
-        <Banner/>
-        <Stories  storiesTitle="Today's Top TURKEYS"
-                  stories={stories} />
-      </div>
-
-      <div className='story-box'>
-        {
-          stories.map( (story) => {
-            return < Stories storiesTitle = { story.img } />
-          })
-        }
-      </div>
-
-      <div className='pop-culture-banner'>
-        {<Stories storiesTitle="Pop Culture"
-                stories={stories} />}
-      </div>
-
-      <div className='story-box2'>
-        {
-          stories.map( (story) => {
-            return < Header headerText = { story.img } />
-          })
-        }
-      </div>
-
-      <div className='footer'>
-        {
-          stories.map( (story) => {
-            return < Footer footerText = { story.title } />
-          })
-        }
-      </div>
-
+      <Header />
+      <Banner />
+      <Stories  storiesTitle="Today's Top Stories"
+                stories={stories} />
+      <Stories  storiesTitle="Pop Culture"
+                stories={stories} />
+      <Footer footerText="Return To Top" />
     </div>
   );
 }

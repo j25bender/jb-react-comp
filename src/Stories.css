@@ -1,6 +1,7 @@
 .Stories {
+  width: 70%;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .stories-header {
@@ -18,4 +19,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1100px) {
+  .stories-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .Stories {
+    width: 85%;
+  }
+
+  .stories-header a {
+    text-align: center;
+    width: 30%;
+  }
 }

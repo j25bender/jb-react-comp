@@ -4,9 +4,9 @@ import './Footer.css';
 const Footer = (props) => {
   return (
     <div className='Footer'>
-			{ props.footerText }
-		</div>
+      <p>{ props.footerText }</p>
+    </div>
   )
-}
+};
 
 export default Footer;
